@@ -1,17 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); */
+@font-face {
+    font-family: 'Itim';
+    src:url(./Assets/Fonts/Itim-Regular.ttf)
+}
+
 body {
-    background-color: white;
+    font-family: 'Itim';
+    /* background: url(./Assets/photo-1570039486851-9caa462a2cd3.jpg);
+    background-size: cover; */
+    background: #1f232e !important;
 }
 
-header {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 1%, rgba(95,6,110,1) 59%);
+/* .nav-link li {
+    font-family: 'Itim';
+    font-size: 28px;
+    color: white
+} */
+
+/* .nav-link:hover {
+    color: pink;
+} */
+
+.me-links a {
+    padding: 0px 10px;
+    font-family: 'Itim';
+    font-size: 28px;
+    color: white;
+    text-decoration: none
 }
 
-nav {
-    background-color: black;
+.me-links a:hover {
+    color: #ffe6ee;
 }
 
-.heropink {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(95,6,110,1) 100%);
+.about-box {
+    padding: 20px;
+    font-family: 'Itim';
+    font-size: 18px;
+    color: white;
+}
+
+.about-box img {
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.about-box h1 {
+    font-size: 28pt;
+}
+
+.projects-box {
+    font-family: Itim;
+    color: white;
+}
+
+.contact-box {
+    padding: 20px;
+    font-family: 'Itim';
+    font-size: 18px;
+    color: white;
 }

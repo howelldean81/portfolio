@@ -1,115 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>My portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Dean Howell's Portfolio</title>
 </head>
+
 <body>
-    <!-- <nav class="nav nav-pills nav-fill">
-        <a class="nav-link active" aria-current="page" href="#">Dean</a>
-        <a class="nav-link" href="#">About ME</a>
-        <a class="nav-link" href="#">Projects</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
-    </nav> -->
-    <header class="p-3 text-white header">
+
+    <!-- Nav -->
+    <nav class="nav">
+        <li class="me-links"><a href="#About">About</a></li>
+        <li class="me-links"><a href="#Projects">Projects</a></li>
+        <li class="me-links"><a href="#Contact">Contact</a></li>
+    </nav>
+
+    <!-- About Me -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 about-box">
+                <img src="./Assets/headshotcircle.png" alt="">
+            </div>
+            <div class="col-8 about-box">
+                <h1 id="About">About Me</h1>
+                <p>Dean Howell</p>
+                <p>I am a web developer based in central Indiana. I hold industry recognized certifications in a number
+                    of technologies including Microsoft Azure and Linux. When I'm not developing applications for the
+                    web, I'm logging miles in my area in pursuit of an ultra-marathon.</p>
+            </div>
+        </div>
+        <div class="container row projects-box">
+            <h1 id="Projects">Projects</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img src="./Assets/projectspics/staticlayout.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="Hulu Static Layout">Card title</h5>
+                            <p class="card-text">A recreation of the Hulu home page using Flexbox.</p>
+                            <a href="https://howelldean81.github.io/static_layout/" class="btn btn-primary">Visit
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img src="./Assets/projectspics/csscreature.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS Creature</h5>
+                            <p class="card-text">Using box-shadows in pure CSS to recreate a popular video game character.</p>
+                            <a href="https://codepen.io/segaboy81/pen/oNBjVWx" class="btn btn-primary">Visit Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img src="./Assets/projectspics/ghibsort.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghib-Sort</h5>
+                            <p class="card-text">This project queries the free Ghibli API, returns all their films, and sorts
+                                them in a table.</p>
+                            <a href="https://howelldean81.github.io/API-Challenge-1/" class="btn btn-primary">Visit
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-transparent" style="width: 18rem;">
+                        <img src="./Assets/projectspics/goodcoin.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Good-coin</h5>
+                            <p class="card-text">Into cryptocurrency? Get live results on this page using the Coinlayer API.</p>
+                            <a href="https://howelldean81.github.io/API-Challenge-1/" class="btn btn-primary">Visit
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact container -->
         <div class="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-      
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-            </ul>
-      
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-              <input type="search" class="form-control form-control-dark" placeholder="Search..." spellcheck="false" data-ms-editor="true">
-            </form>
-      
-            <div class="text-end">
-              <button type="button" class="btn btn-outline-light me-2">Login</button>
-              <button type="button" class="btn btn-warning">Sign-up</button>
-            </div>
-          </div>
-        </div>
-      </header>
-    <div class="heropink text-secondary px-4 py-5 text-center">
-        <div class="py-5">
-          <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-              <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
+            <div class="row">
+                <div class="col-4 contact-box">
+                    <h1 id="Contact">Contact</h1>
                 </div>
-              </div>
-            </div>
-          </div>
-        <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
+                <div class="col-8 contact-box">
+                    <form action="https://formspree.io/f/xpzkzvld" method="POST">
+                        <label>
+                            email address:
+                            <input type="email" name="_replyto">
+                        </label>
+                        <br>
+                        <label>
+                            Message:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-              </div>
             </div>
-          </div>
-      </div>
-      <section id="contact">
-          <!-- modify this form HTML and place wherever you want your form -->
-
-        <form
-        action="https://formspree.io/f/xpzkzvld"
-        method="POST"
-        >
-        <label>
-        Your email:
-        <input type="email" name="_replyto">
-        </label>
-        <label>
-        Your message:
-        <textarea name="message"></textarea>
-        </label>
-
-        <!-- your other form fields go here -->
-
-        <button type="submit">Send</button>
-        </form>
-      </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        </div>
+    </div>
+    <div class="container">
+        <img src="./Assets/fhi.png" alt="">
+    </div>
+    <footer class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="https://www.linkedin.com/in/dean-howell-a7282a16" target="blank"><img
+                            src="./Assets/icons/600px-LinkedIn_logo_In-Black.svg.png" alt=""></a>
+                    <a class="nav-link" href="https://github.com/howelldean81" target="blank"><img
+                            src="./Assets/icons/img_529753.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    </script>
 </body>
-</html>
 
+</html>

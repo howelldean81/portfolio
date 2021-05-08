@@ -52,6 +52,10 @@ body {
     font-size: 28pt;
 }
 
+.about-box a {
+    color: white;
+}
+
 .projects-box {
     font-family: Itim;
     color: white;

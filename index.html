@@ -20,8 +20,9 @@
         <li class="me-links"><a href="#Contact">Contact</a></li>
     </nav>
 
-    <!-- About Me -->
     <div class="container">
+
+         <!-- About Me -->
         <div class="row">
             <div class="col-4 about-box">
                 <img src="./Assets/headshotcircle.png" alt="">
@@ -32,6 +33,7 @@
                 <p>I am a web developer based in central Indiana. I hold industry recognized certifications in a number
                     of technologies including Microsoft Azure and Linux. When I'm not developing applications for the
                     web, I'm logging miles in my area in pursuit of an ultra-marathon.</p>
+                <h2><a href="https://1drv.ms/b/s!AhN8EWraP8y7g-sMYzHn48BOe8cS3g?e=VYjSc3" target="blank">Resume</a></h2>
             </div>
         </div>
         <div class="container row projects-box">
@@ -43,7 +45,7 @@
                         <div class="card-body">
                             <h5 class="Hulu Static Layout">Card title</h5>
                             <p class="card-text">A recreation of the Hulu home page using Flexbox.</p>
-                            <a href="https://howelldean81.github.io/static_layout/" class="btn btn-primary">Visit
+                            <a href="https://howelldean81.github.io/static_layout/" target= "blank" class="btn btn-primary">Visit
                                 Project</a>
                         </div>
                     </div>
@@ -54,7 +56,7 @@
                         <div class="card-body">
                             <h5 class="card-title">CSS Creature</h5>
                             <p class="card-text">Using box-shadows in pure CSS to recreate a popular video game character.</p>
-                            <a href="https://codepen.io/segaboy81/pen/oNBjVWx" class="btn btn-primary">Visit Project</a>
+                            <a href="https://codepen.io/segaboy81/pen/oNBjVWx" target= "blank" class="btn btn-primary">Visit Project</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
                             <h5 class="card-title">Ghib-Sort</h5>
                             <p class="card-text">This project queries the free Ghibli API, returns all their films, and sorts
                                 them in a table.</p>
-                            <a href="https://howelldean81.github.io/API-Challenge-1/" class="btn btn-primary">Visit
+                            <a href="https://howelldean81.github.io/API-Challenge-1/" target= "blank" class="btn btn-primary">Visit
                                 Project</a>
                         </div>
                     </div>
@@ -76,7 +78,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Good-coin</h5>
                             <p class="card-text">Into cryptocurrency? Get live results on this page using the Coinlayer API.</p>
-                            <a href="https://howelldean81.github.io/API-Challenge-1/" class="btn btn-primary">Visit
+                            <a href="https://howelldean81.github.io/GoodCoin/" target= "blank" class="btn btn-primary">Visit
                                 Project</a>
                         </div>
                     </div>
@@ -90,21 +92,22 @@
                 <div class="col-4 contact-box">
                     <h1 id="Contact">Contact</h1>
                 </div>
-                <div class="col-8 contact-box">
-                    <form action="https://formspree.io/f/xpzkzvld" method="POST">
-                        <label>
-                            email address:
-                            <input type="email" name="_replyto">
-                        </label>
-                        <br>
-                        <label>
-                            Message:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
+                <form action="https://formspree.io/f/xpzkzvld" method="POST" class="col-8 contact-box">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit"class="btn btn-primary">Send</button>
+
+                </form>
             </div>
+        </div>
         </div>
     </div>
     <div class="container">

@@ -8,6 +8,8 @@ body {
     font-family: 'Itim';
     background: url(./Assets/photo-1477346611705-65d1883cee1e.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* .nav-link li {
@@ -19,6 +21,12 @@ body {
 /* .nav-link:hover {
     color: pink;
 } */
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
 
 .me-links a {
     padding: 0px 10px;
@@ -70,3 +78,4 @@ body {
     font-size: 18px;
     color: white;
 }
+
